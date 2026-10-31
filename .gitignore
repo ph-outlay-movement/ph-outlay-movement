@@ -1,0 +1,17 @@
+node_modules/
+dist/
+build/
+coverage/
+.wrangler/
+.dev.vars
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+pipeline/.cache/
+pipeline/downloads/
+docs/private/
