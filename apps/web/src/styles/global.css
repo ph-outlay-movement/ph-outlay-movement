@@ -28,11 +28,10 @@ body {
   padding: var(--space-md);
 }
 
-.brand {
-  color: var(--color-primary);
-  font-family: var(--font-heading);
-  font-size: var(--text-large);
-  font-weight: 700;
+.brand-logo {
+  display: block;
+  width: auto;
+  height: 36px;
 }
 
 .page-main {
