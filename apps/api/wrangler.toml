@@ -1,0 +1,7 @@
+name = "outlay-api"
+main = "src/index.ts"
+compatibility_date = "2025-09-01"
+
+[vars]
+API_VERSION = "v1"
+ALLOWED_ORIGIN = "http://localhost:5173"

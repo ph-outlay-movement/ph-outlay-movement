@@ -1,0 +1,18 @@
+{
+  "name": "ph-outlay-movement",
+  "private": true,
+  "license": "MIT",
+  "packageManager": "pnpm@9.12.3",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev:web": "pnpm --filter @outlay/web dev",
+    "dev:api": "pnpm --filter @outlay/api dev",
+    "typecheck": "pnpm -r typecheck",
+    "build": "pnpm -r build"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
