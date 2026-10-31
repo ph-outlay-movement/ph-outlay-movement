@@ -4,7 +4,10 @@ export function App() {
   return (
     <div className="page">
       <header className="page-header">
-        <img className="brand-logo" src="/logo.png" alt="Outlay" width={119} height={36} />
+        <span className="brand">
+          <img className="brand-mark" src="/logo-mark.svg" alt="" width={36} height={32} />
+          <span className="brand-name">Outlay</span>
+        </span>
       </header>
       <main className="page-main">
         <Home />
