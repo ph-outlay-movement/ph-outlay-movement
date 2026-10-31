@@ -27,8 +27,8 @@ National government projects, starting with the Department of Public Works and H
 
 | # | Step | Main source | Format | Difficulty |
 |---|------|-------------|--------|------------|
-| 1 | President's proposal (NEP) | BetterGov `open-budget-data`, DBM | JSON / PDF | Easy |
-| 2 | House version (GAB) | House of Representatives | PDF | Medium |
+| 1 | President's proposal (NEP) | BetterGov Budget API and `open-budget-data`, DBM | JSON / PDF | Easy |
+| 2 | House version (GAB) | BetterGov Budget API (FY2027 only), House of Representatives | JSON / PDF | Easy for FY2027, Medium otherwise |
 | 3 | Senate version (GAB) | Senate | PDF | Medium |
 | 4 | Bicam report | Congress, DBM | PDF | Medium |
 | 5 | Signed law (GAA) | BetterGov `open-budget-data`, DBM | JSON / PDF | Easy |
@@ -38,6 +38,17 @@ National government projects, starting with the Department of Public Works and H
 | 9 | Cases | Ombudsman, Sandiganbayan | Press releases, resolutions, decisions | Hardest (manual curation) |
 
 Plenary deliberations (Congressional Record, Senate Journal) are linked at the **agency** level, not per project.
+
+### Use of the BetterGov Budget API
+
+The data pipeline reads the public BetterGov.ph Budget API (`https://budget.bettergov.ph/api/v1`) for the NEP and House steps instead of extracting those PDFs itself.
+
+- **Archived, not live.** The pipeline fetches the API on a schedule and stores each response with its SHA-256 fingerprint and retrieval date. The web app and public API read Outlay's own storage and never call the Budget API at request time.
+- **Coverage today.** The FY2027 dataset holds the NEP and the House bill (second and third reading) for four programs: DPWH infrastructure, farm-to-market roads, health facilities and irrigation. It has no Senate, bicam or FY2027 GAA stage. Enacted budgets for FY2020–2026 are served separately and are matched by program name, not by project ID.
+- **Unofficial comparison.** The API describes itself as independent and unofficial. Outlay therefore also links, and archives, the official document page for every figure the API gives a page reference for.
+- **Terms.** The data terms of the API are to be confirmed with BetterGov before public launch.
+- **Disclaimers.** The API's own notice and disclaimers are shown with its figures, as returned.
+- **Code.** No code is copied from `bettergovph/transparency-portal`; it is MIT-licensed and is referenced only.
 
 ## 3. Architecture
 
