@@ -14,7 +14,10 @@ export function App() {
       </main>
       <footer className="page-footer">
         <p>An independent citizen project. Not affiliated with the Philippine government.</p>
-        <p>Built by Medelo Gaabon, Medelo Software.</p>
+        <p className="credit">
+          <img className="credit-mark" src="/medelo-mark.svg" alt="" width={21} height={20} />
+          <span>Built by Medelo Gaabon, Medelo Software.</span>
+        </p>
       </footer>
     </div>
   );
