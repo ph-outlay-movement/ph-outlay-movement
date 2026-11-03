@@ -15,7 +15,6 @@ Planning. See [`docs/SPEC.md`](docs/SPEC.md) for the architecture and decisions 
 ## Credits
 
 - Data and inspiration from [BetterGov.ph](https://bettergov.ph) and its open-source projects and datasets. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
-- Built by Medelo Gaabon, Medelo Software.
 
 ## License
 

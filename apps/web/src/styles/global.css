@@ -79,15 +79,3 @@ body {
 .page-footer p {
   margin: 0 0 var(--space-xs);
 }
-
-.credit {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-}
-
-.credit-mark {
-  display: block;
-  width: auto;
-  height: 20px;
-}

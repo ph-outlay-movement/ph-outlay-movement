@@ -173,4 +173,4 @@ Each indicator has a plain-language "What does this mean?" explanation and is do
 - Code: **MIT** (see `LICENSE`).
 - Third-party code and data: see `THIRD_PARTY_NOTICES.md`. MIT-licensed code copied from other repositories keeps its copyright and license notice.
 - `bettergovph/open-data-visualization` has no license file: it is used as a reference only; no code is copied from it.
-- Credit line: **Built by Medelo Gaabon, Medelo Software.**
+- Author credit: not shown publicly for now; to be decided before public launch.
